@@ -1,0 +1,889 @@
+{
+  "$id": "http://example.com/myURI.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "ARKIK ORDERS Contract",
+  "properties": {
+    "Action": {
+      "type": "string"
+    },
+    "ApplicationCode": {
+      "type": "string"
+    },
+    "AuthCode": {
+      "type": "string"
+    },
+    "BackEndUserCreateCode": {
+      "type": "string"
+    },
+    "CallToConfirm": {
+      "type": "boolean"
+    },
+    "CancelReasonCode": {
+      "type": "string"
+    },
+    "ChannelCode": {
+      "type": "string"
+    },
+    "ChannelId": {
+      "type": "integer"
+    },
+    "CheckNum": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "CommercialProduct": {
+      "type": "string"
+    },
+    "CommercialProductCode": {
+      "type": "string"
+    },
+    "CommercialProductShortCode": {
+      "type": "string"
+    },
+    "CommitedDeliveryDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "CountryCode": {
+      "type": "string"
+    },
+    "CountryId": {
+      "type": "integer"
+    },
+    "County": {
+      "type": "string"
+    },
+    "CreditStatusId": {
+      "type": "integer"
+    },
+    "CurrencyCode": {
+      "type": "string"
+    },
+    "CustomerCode": {
+      "type": "string"
+    },
+    "CustomerDescription": {
+      "type": "string"
+    },
+    "CustomerId": {
+      "type": "integer"
+    },
+    "CustomerRefDoc": {
+      "type": "string"
+    },
+    "DateCreate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "DateUpdate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "DefaultCustomerPaymentTypeId": {
+      "type": "integer"
+    },
+    "DefaultPlantId": {
+      "type": "integer"
+    },
+    "DefaultTruckVolume": {
+      "type": "number"
+    },
+    "DeliveryFrequency": {
+      "type": "number"
+    },
+    "DeliveryMethodId": {
+      "type": "integer"
+    },
+    "Distance": {
+      "type": "number"
+    },
+    "ExternalAppUserCreateCode": {
+      "type": "string"
+    },
+    "ExternalComment": {
+      "type": "string"
+    },
+    "FirstCommitedDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "FirstDeliveryDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "InWaitingList": {
+      "type": "boolean"
+    },
+    "InWaitingListDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "InternalComment": {
+      "type": "string"
+    },
+    "IsCashBlock": {
+      "type": "boolean"
+    },
+    "IsCreditBlock": {
+      "type": "boolean"
+    },
+    "IsLocked": {
+      "type": "boolean"
+    },
+    "IsOneTimeCustomer": {
+      "type": "boolean"
+    },
+    "IsReopen": {
+      "type": "boolean"
+    },
+    "Items": {
+      "items": {
+        "properties": {
+          "Action": {
+            "type": "string"
+          },
+          "AddOnSite": {
+            "type": "string"
+          },
+          "AddServiceItemTypeId": {
+            "type": "integer"
+          },
+          "AddServiceLevelId": {
+            "type": "integer"
+          },
+          "Addtime": {
+            "type": "string"
+          },
+          "ArrivalDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ArrivedPlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ArrivedRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "AssignedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "CancelReasonCode": {
+            "type": "string"
+          },
+          "ChannelCode": {
+            "type": "string"
+          },
+          "CommercialProduct": {
+            "type": "string"
+          },
+          "CommercialProductCode": {
+            "type": "string"
+          },
+          "CommercialProductId": {
+            "type": "integer"
+          },
+          "CommercialProductShortCode": {
+            "type": "string"
+          },
+          "CommitedDeliveryDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ComponentCode": {
+            "type": "string"
+          },
+          "ComponentDesc": {
+            "type": "string"
+          },
+          "ComponentId": {
+            "type": "integer"
+          },
+          "ConfirmQuantity": {
+            "type": "number"
+          },
+          "ConfirmQuantitySummary": {
+            "type": "number"
+          },
+          "CountryCode": {
+            "type": "string"
+          },
+          "CtpDateTimeCreate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "CtpDateTimeUpdate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "CtpIndicatorCreate": {
+            "type": "integer"
+          },
+          "CtpIndicatorUpdate": {
+            "type": "integer"
+          },
+          "CustomerRefDoc": {
+            "type": "string"
+          },
+          "CycleTime": {
+            "type": "integer"
+          },
+          "Delivery": {
+            "properties": {
+              "Id": {
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "DeliveryAmount": {
+            "type": "number"
+          },
+          "DeliveryAmountSummary": {
+            "type": "number"
+          },
+          "DeliveryDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "DeliveryFrequency": {
+            "type": "integer"
+          },
+          "DeliveryGroupNumber": {
+            "type": "integer"
+          },
+          "DeliveryNumber": {
+            "type": "string"
+          },
+          "DiscountPerc": {
+            "type": "number"
+          },
+          "FinishDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "HighLevelItemSeqNum": {
+            "type": "integer"
+          },
+          "HoldIndicator": {
+            "type": "boolean"
+          },
+          "HoldVolume": {
+            "type": "number"
+          },
+          "IsAutoformulable": {
+            "type": "boolean"
+          },
+          "IsCleanUpConfirmed": {
+            "type": "boolean"
+          },
+          "IsOnHoldConfirmed": {
+            "type": "boolean"
+          },
+          "ItemStatusChange": {
+            "type": "boolean"
+          },
+          "LicensePlate": {
+            "type": "string"
+          },
+          "Lifex": {
+            "type": "string"
+          },
+          "LoadNumber": {
+            "type": "string"
+          },
+          "LoadSize": {
+            "type": "number"
+          },
+          "LoadingDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "LoadingEndPlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "LoadingEndRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "LoadingStartPlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "LoadingStartRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "MaterialTypeCode": {
+            "type": "string"
+          },
+          "Mep": {
+            "type": "string"
+          },
+          "OnJobsitePlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "OnJobsiteRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "OnJobsiteWasGpsEvent": {
+            "type": "string"
+          },
+          "OrderItemId": {
+            "type": "integer"
+          },
+          "OrderItemNumber": {
+            "type": "integer"
+          },
+          "OrderItemStatusCode": {
+            "type": "string"
+          },
+          "OrderItemStatusDesc": {
+            "type": "string"
+          },
+          "OrderItemStatusId": {
+            "type": "integer"
+          },
+          "OrderItemTypeCode": {
+            "type": "string"
+          },
+          "OrderItemTypeId": {
+            "type": "integer"
+          },
+          "OriginalPlantCode": {
+            "type": "string"
+          },
+          "PlantCode": {
+            "type": "string"
+          },
+          "PlantDesc": {
+            "type": "string"
+          },
+          "PlantId": {
+            "type": "integer"
+          },
+          "PouringElementCode": {
+            "type": "string"
+          },
+          "PouringElementDescription": {
+            "type": "string"
+          },
+          "PouringElementId": {
+            "type": "integer"
+          },
+          "ProductionOrderNumber": {
+            "type": "string"
+          },
+          "ProductionOrderStatus": {
+            "type": "integer"
+          },
+          "PumpSize": {
+            "type": "string"
+          },
+          "PumpSizeId": {
+            "type": "integer"
+          },
+          "RawConfirmQuantity": {
+            "type": "number"
+          },
+          "RefDocumentCode": {
+            "type": "string"
+          },
+          "RefDocumentItemId": {
+            "type": "integer"
+          },
+          "RefDocumentItemNumber": {
+            "type": "string"
+          },
+          "ReferenceDocumentTypeI": {
+            "type": "string"
+          },
+          "RejectFolio": {
+            "type": "string"
+          },
+          "RemainingIndicator": {
+            "type": "boolean"
+          },
+          "RemainingVolume": {
+            "type": "number"
+          },
+          "ReturnIndicator": {
+            "type": "string"
+          },
+          "ScheduleLine": {
+            "type": "integer"
+          },
+          "Sequence": {
+            "type": "integer"
+          },
+          "ServiceTypeCode": {
+            "type": "string"
+          },
+          "Signature": {
+            "type": "string"
+          },
+          "Slump": {
+            "type": "number"
+          },
+          "SlumpMax": {
+            "type": "number"
+          },
+          "SlumpMin": {
+            "type": "number"
+          },
+          "TaskNumber": {
+            "type": "string"
+          },
+          "TaxAmount": {
+            "type": "number"
+          },
+          "TaxFree": {
+            "type": "boolean"
+          },
+          "TaxJurisdictionCode": {
+            "type": "string"
+          },
+          "TaxJurisdictionRate": {
+            "type": "string"
+          },
+          "TaxJurisdictionRateId": {
+            "type": "integer"
+          },
+          "TechnicalProduct": {
+            "type": "string"
+          },
+          "TechnicalProductCode": {
+            "type": "string"
+          },
+          "TechnicalProductId": {
+            "type": "integer"
+          },
+          "TechnicalProductLongDesc": {
+            "type": "string"
+          },
+          "TechnicalProductShortDesc": {
+            "type": "string"
+          },
+          "ToJobsitePlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ToJobsiteRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ToPlantPlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ToPlantRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ToPlantWasGpsEvent": {
+            "type": "string"
+          },
+          "TotalItemPrice": {
+            "type": "number"
+          },
+          "TravelTime": {
+            "type": "integer"
+          },
+          "TruckWashTime": {
+            "type": "string"
+          },
+          "UnitCode": {
+            "type": "string"
+          },
+          "UnitPrice": {
+            "type": "number"
+          },
+          "UnloadMethodCode": {
+            "type": "string"
+          },
+          "UnloadMethodId": {
+            "type": "integer"
+          },
+          "UnloadingEndPlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "UnloadingEndRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "UnloadingMethod": {
+            "type": "string"
+          },
+          "UnloadingStartPlannedDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "UnloadingStartRealDateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "UnloadingTime": {
+            "type": "integer"
+          },
+          "Vehicle": {
+            "properties": {
+              "Driver": {
+                "type": "string"
+              },
+              "DriverCode": {
+                "type": "string"
+              },
+              "DriverPhone": {
+                "type": "string"
+              },
+              "EquipmentNumber": {
+                "type": "string"
+              },
+              "FleetId": {
+                "type": "string"
+              },
+              "FleetNumber": {
+                "type": "string"
+              },
+              "GpsProviderCode": {
+                "type": "string"
+              },
+              "Id": {
+                "type": "integer"
+              },
+              "LicensePlate": {
+                "type": "string"
+              },
+              "PlantCode": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "JobSiteCode": {
+      "type": "string"
+    },
+    "JobSiteId": {
+      "type": "integer"
+    },
+    "JobsiteDesc": {
+      "type": "string"
+    },
+    "JobsiteTimeZone": {
+      "type": "string"
+    },
+    "LastArrivalDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "LastCommitedDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "LastDeliveryDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "LastPurchaserContact": {
+      "type": "string"
+    },
+    "LastReceiverContact": {
+      "type": "string"
+    },
+    "Latitude": {
+      "type": "number"
+    },
+    "LoadSize": {
+      "type": "number"
+    },
+    "LoadingEndRealDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Longitude": {
+      "type": "number"
+    },
+    "NetValue": {
+      "type": "number"
+    },
+    "Observations": {
+      "type": "string"
+    },
+    "OneTimeCustomer": {
+      "properties": {
+        "CashPaymentTypeId": {
+          "type": "integer"
+        },
+        "City": {
+          "type": "string"
+        },
+        "CommercialName": {
+          "type": "string"
+        },
+        "County": {
+          "type": "string"
+        },
+        "Latitude": {
+          "type": "number"
+        },
+        "Longitude": {
+          "type": "number"
+        },
+        "OutsideCity": {
+          "type": "boolean"
+        },
+        "Region": {
+          "type": "string"
+        },
+        "RegionDescription": {
+          "type": "string"
+        },
+        "StateCode": {
+          "type": "string"
+        },
+        "StateId": {
+          "type": "integer"
+        },
+        "Street": {
+          "type": "string"
+        },
+        "TaxClassId": {
+          "type": "integer"
+        },
+        "ZipCode": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "OrderCode": {
+      "type": "string"
+    },
+    "OrderCreationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "OrderCreationHour": {
+      "type": "string"
+    },
+    "OrderHdrId": {
+      "type": "integer"
+    },
+    "OrderItemStatusId": {
+      "type": "integer"
+    },
+    "OrderStatusChange": {
+      "type": "boolean"
+    },
+    "OrderStatusCode": {
+      "type": "string"
+    },
+    "OrderStatusDesc": {
+      "type": "string"
+    },
+    "OrderStatusId": {
+      "type": "integer"
+    },
+    "OrderTypeCode": {
+      "type": "string"
+    },
+    "OrderTypeDesc": {
+      "type": "string"
+    },
+    "OrderTypeId": {
+      "type": "integer"
+    },
+    "OriginalOrderDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "PaymentMethodCode": {
+      "type": "string"
+    },
+    "PaymentTermCode": {
+      "type": "string"
+    },
+    "PaymentTerms": {
+      "type": "string"
+    },
+    "PaymentTermsSummary": {
+      "type": "string"
+    },
+    "PaymentTypeDesc": {
+      "type": "string"
+    },
+    "PaymentTypeId": {
+      "type": "integer"
+    },
+    "PickUp": {
+      "type": "boolean"
+    },
+    "PoDAddress": {
+      "type": "string"
+    },
+    "PointOfDeliveryCode": {
+      "type": "string"
+    },
+    "PointOfDeliveryDesc": {
+      "type": "string"
+    },
+    "PointOfDeliveryId": {
+      "type": "integer"
+    },
+    "PostalCode": {
+      "type": "string"
+    },
+    "PouringElementCode": {
+      "type": "string"
+    },
+    "PreviousOrderStatusCode": {
+      "type": "string"
+    },
+    "PurchaserContact": {
+      "type": "string"
+    },
+    "PurchaserContactCode": {
+      "type": "string"
+    },
+    "PurchaserContactId": {
+      "type": "integer"
+    },
+    "PurchaserContactLastName": {
+      "type": "string"
+    },
+    "PurchaserContactName": {
+      "type": "string"
+    },
+    "ReceiverContact": {
+      "type": "string"
+    },
+    "ReceiverContactCode": {
+      "type": "string"
+    },
+    "ReceiverContactId": {
+      "type": "integer"
+    },
+    "ReceiverContactLastName": {
+      "type": "string"
+    },
+    "ReceiverContactName": {
+      "type": "string"
+    },
+    "RefDocumentCode": {
+      "type": "string"
+    },
+    "RefDocumentId": {
+      "type": "integer"
+    },
+    "RefDocumentTypeCode": {
+      "type": "string"
+    },
+    "RejectFolio": {
+      "type": "string"
+    },
+    "Renegotiated": {
+      "type": "integer"
+    },
+    "ReopenBy": {
+      "type": "string"
+    },
+    "ReopenDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "RepresentativeName": {
+      "type": "string"
+    },
+    "RequestedDeliveryDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "SalesAreaIdDistChannelCode": {
+      "type": "string"
+    },
+    "SalesAreaIdDivisionCode": {
+      "type": "string"
+    },
+    "SalesAreaIdOrganizationCode": {
+      "type": "string"
+    },
+    "ShippingInstructions": {
+      "type": "string"
+    },
+    "ShowAdditional": {
+      "type": "boolean"
+    },
+    "Slump": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "StreetName": {
+      "type": "string"
+    },
+    "SubGroupCode": {
+      "type": "string"
+    },
+    "SubGroupId": {
+      "type": "integer"
+    },
+    "TaskNumber": {
+      "type": "string"
+    },
+    "TaxAmount": {
+      "type": "number"
+    },
+    "Taxes": {
+      "type": "number"
+    },
+    "TechnicalProduct": {
+      "type": "string"
+    },
+    "TechnicalProductCode": {
+      "type": "string"
+    },
+    "TotalDelivered": {
+      "type": "number"
+    },
+    "TotalItems": {
+      "type": "integer"
+    },
+    "TotalOrdered": {
+      "type": "number"
+    },
+    "TravelTime": {
+      "type": "integer"
+    },
+    "Unit": {
+      "type": "string"
+    },
+    "UseAdditionalPaymentTerm": {
+      "type": "boolean"
+    },
+    "UserCreateCode": {
+      "type": "string"
+    },
+    "UserUpdateCode": {
+      "type": "string"
+    },
+    "VehicleMaxVolume": {
+      "type": "number"
+    }
+  },
+  "title": "ARKIKORDERS",
+  "type": "object"
+}
